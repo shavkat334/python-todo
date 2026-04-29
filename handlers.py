@@ -1,22 +1,28 @@
-from db import add_task
+from db import add_task, get_all_tasks
 
 
 def handle_add_task():
-    print('--Add New Task--')
-    title = input('Title: ')
-    description = input('Description: ')
+    print("--Add New Task--")
+    title = input("Title: ")
+    description = input("Description: ")
 
     add_task(title, description)
-    
-    print('Task has been added successfully.')
+
+    print("Task has been added successfully.")
 
 
 def handle_show_tasks():
-    pass
+    tasks = get_all_tasks()
+    for task in tasks:
+        print(task["id"], task["title"])
 
 
 def handle_show_task_detail():
-    pass
+    id = int(input("task id: "))
+    tasks = get_all_tasks()
+    for task in tasks:
+        if task["id"] == id:
+            print(task["id"], task["title"], task["description"])
 
 
 def handle_mark_as_comleted():

@@ -20,7 +20,7 @@ def main() -> None:
         if option == "1":
             handle_add_task()
         elif option == "2":
-            handle_show_tasks()()
+            handle_show_tasks()
         elif option == "3":
             handle_show_task_detail()
         elif option == "4":

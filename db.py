@@ -16,13 +16,15 @@ def write_file(tasks: list[dict]):
 
 def add_task(title: str, description: str):
     data = read_file()
-    data['tasks'].append({
-        "id": data['current_id'],
-        "title": title, 
-        "description": description, 
-        "status": False
-    })
-    data['current_id'] += 1
+    data["tasks"].append(
+        {
+            "id": data["current_id"],
+            "title": title,
+            "description": description,
+            "status": False,
+        }
+    )
+    data["current_id"] += 1
     write_file(data)
 
 
@@ -39,4 +41,5 @@ def delete_task():
 
 
 def get_all_tasks():
-    pass
+    data = read_file()
+    return data["tasks"]
