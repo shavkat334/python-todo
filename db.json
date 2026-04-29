@@ -8,5 +8,10 @@
         "title": "Kitob oqish",
         "description": "ertalab 7:00 da 30 minute kitob oqish",
         "status": false
+    },
+    {
+        "title": "Study",
+        "description": "9:00 da oqishga ketishim kerak",
+        "status": false
     }
 ]

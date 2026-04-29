@@ -1,5 +1,14 @@
+from db import add_task
+
+
 def handle_add_task():
-    pass
+    print('--Add New Task--')
+    title = input('Title: ')
+    description = input('Description: ')
+
+    add_task(title, description)
+    
+    print('Task has been added successfully.')
 
 
 def handle_show_tasks():
