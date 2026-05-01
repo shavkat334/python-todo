@@ -29,7 +29,13 @@
             "title": "test 2",
             "description": "test 2",
             "status": false
+        },
+        {
+            "id": 6,
+            "title": "kitob o'qish",
+            "description": "soat 9da",
+            "status": false
         }
     ],
-    "current_id": 6
+    "current_id": 7
 }

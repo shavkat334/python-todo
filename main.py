@@ -5,8 +5,8 @@ from handlers import (
     handle_add_task,
     handle_show_tasks,
     handle_show_task_detail,
-    handle_mark_as_comleted,
-    handle_mark_as_incomleted,
+    handle_mark_as_completed,
+    handle_mark_as_incompleted,
     handle_delete_task,
     handle_search_task,
 )
@@ -24,9 +24,9 @@ def main() -> None:
         elif option == "3":
             handle_show_task_detail()
         elif option == "4":
-            handle_mark_as_comleted()
+            handle_mark_as_completed()
         elif option == "5":
-            handle_mark_as_incomleted()
+            handle_mark_as_incompleted()
         elif option == "6":
             handle_delete_task()
         elif option == "7":
